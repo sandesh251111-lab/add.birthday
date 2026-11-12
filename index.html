@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#24152f">
+  <meta name="description" content="A birthday surprise for Addrina, with love from Uncle Sandesh.">
+  <title>Happy Birthday, Addrina! ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+  <div id="confetti-layer" aria-hidden="true"></div>
+
+  <section id="countdownScreen" class="countdown-screen">
+    <p class="eyebrow">A SPECIAL SURPRISE IS WAITING</p>
+    <div class="sparkle">✦</div>
+    <h1>Something beautiful<br>is about to begin<span>.</span></h1>
+    <p class="intro-copy">A little countdown for someone who makes life brighter.</p>
+
+    <div class="timer" aria-label="Countdown to Addrina's birthday">
+      <div><strong id="days">00</strong><small>Days</small></div>
+      <div><strong id="hours">00</strong><small>Hours</small></div>
+      <div><strong id="minutes">00</strong><small>Minutes</small></div>
+      <div><strong id="seconds">00</strong><small>Seconds</small></div>
+    </div>
+    <p class="date-note">13 November 2026 · 12:00 AM · Nepal time</p>
+    <p class="made-note">Made with love by Uncle Sandesh ♡</p>
+  </section>
+
+  <main id="birthdayScreen" class="hidden">
+    <nav class="topbar">
+      <a class="brand" href="#">ADDRINA<span>♡</span></a>
+      <span class="nav-note">YOUR SPECIAL DAY</span>
+    </nav>
+
+    <header class="hero">
+      <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+      <div class="hero-stars">✧ &nbsp; ✦ &nbsp; ✧</div>
+      <h1>Happy Birthday,<br><em>Addrina!</em></h1>
+      <p class="hero-copy">May your day be filled with laughter, lovely surprises and memories that stay forever.</p>
+      <a class="scroll-link" href="#memories">DISCOVER YOUR SURPRISE <span>↓</span></a>
+    </header>
+
+    <section class="memories section" id="memories">
+      <p class="eyebrow">LITTLE MOMENTS, BIG MEMORIES</p>
+      <h2>Your beautiful<br><em>journey.</em></h2>
+      <figure class="collage-frame">
+        <img src="images/addrina-collage.jpg" alt="A collage of four childhood and growing-up memories">
+        <figcaption>Every picture holds a little story. Keep smiling, Addrina! ♡</figcaption>
+      </figure>
+    </section>
+
+    <section class="letter-section section">
+      <article class="letter-card">
+        <div class="letter-heart">♡</div>
+        <p class="eyebrow">A MESSAGE FROM YOUR UNCLE</p>
+        <h2>Dear Addrina,</h2>
+        <p>
+          Happy Birthday, my dear niece! May your life always be filled with
+          happiness, love, success and endless opportunities. May you have
+          the courage to follow your dreams and the strength to overcome
+          every challenge. Keep learning, keep growing, and never stop
+          smiling. Remember, your uncle is always wishing the very best for you.
+          May this year bring countless beautiful memories into your life.
+        </p>
+        <p class="signature">With lots of love,<br><strong>Uncle Sandesh</strong> ♡</p>
+      </article>
+    </section>
+
+    <section class="wish-section section">
+      <div class="cake">🎂</div>
+      <h2>Make a wish,<br><em>the world is yours.</em></h2>
+      <p>Here's to new adventures, happy surprises and a year full of beautiful beginnings.</p>
+      <button id="celebrateButton" type="button">Celebrate! ✨</button>
+    </section>
+
+    <footer>
+      MADE ESPECIALLY FOR ADDRINA <span>♡</span>
+      <small>With love, Uncle Sandesh.</small>
+    </footer>
+  </main>
+
+  <!-- The page attempts autoplay at midnight. Browser autoplay rules may block sound
+       until the visitor has interacted with the page. -->
+  <audio id="birthdayMusic" src="birthday-guitar.mp3" preload="auto" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
